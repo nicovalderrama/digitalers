@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,300&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&family=Quicksand:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+h1{
+    font-size: 78px;
+    font-weight: 700;
+    color: #0a2ff1;
+}
+span{
+    background-color:  #3ffff3;
+}
+p{
+    font-size: 30px;
+    font-weight: 500;
+    color: #0a2ff1;
+}
+img{
+    background-image: url('/modulo-2/desafios/desafio1/fondo.JPG');
+    width: 400px;
+}

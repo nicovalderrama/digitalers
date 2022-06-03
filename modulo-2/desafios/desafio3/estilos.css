@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,300&family=Poppins:wght@300;700&family=Quicksand:wght@500&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background-color: #04146c;
+    color: #D3E0F6;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 !important;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 88px;
+    color: #04146c;
+    text-align: center;
+}
+
+img{
+    width: 600px;
+    margin:10px auto;
+	display:block;
+}
+
+p{
+    color:#04146c;
+    font-size: 26px;
+}
+
+div{
+    background-color:   #edf7ff;
+    font-size: 24px;
+}

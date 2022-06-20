@@ -8,23 +8,14 @@
     <link rel="stylesheet" href="/modulo-3/estilos.css">
 </head>
 <body>
-    <form action="nicolas-valderrama.000webhostapp.com/">
-        <label>
-            Nombre:
-            <input type="text" name="Nombre"><br>
-        </label>
-        <label>
-            Apellido:
-            <input type="text" name="Apellido"><br>
-        </label>
-        <label>
-            Cumpleaños:
-            <input type="date" name="Cumpleaños"><br>
-        </label>
-        <label>
-            Contraseña:
-            <input type="password" name="contraseña"><br>
-        </label>
+    <form action="https://dani-fran.000webhostapp.com/">
+        <label>Nombre:<input type="text" name="Nombre" placeholder="Ingrese su nombre"><br></label>
+        <label>Apellido:<input type="text" name="Apellido"><br></label>
+        <label>Cumpleaños:<input type="date" name="Cumpleaños"><br></label>
+        <label>Contraseña:<input type="password" name="contraseña" pattern=""><br></label> <!-- html5pattern.com para elegir el patron que quiero -->
+        <label>Terminos y condiciones <input type="checkbox" name="tyc" id=""><br></label>
+        <label>Varon <input type="radio" name="genero" id="" value="V"></label>
+        <label>Mujer <input type="radio" name="genero" id="" value="M"><br></label>
         <input type="submit">
     </form>
 </body>

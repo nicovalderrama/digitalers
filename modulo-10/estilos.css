@@ -1,0 +1,20 @@
+h1{
+    font-weight: 700;
+    color: #04146c;
+}
+
+hr{
+    border-width: 5px;
+    border-color: #0a2ff1;
+}
+.card-body{
+    padding:0;
+}
+.card{
+    border-radius: 0;
+    border-color: #0a2ff1;
+}
+.btn{
+    border-radius: 0;
+    width: 100%;
+}

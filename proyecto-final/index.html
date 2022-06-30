@@ -11,23 +11,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="shadow.css" />
     <title>Blog Personal</title>
   </head>
   <body>
     <div class="container-fluid">
       <nav>
-        <div class="card border-0">
-          <div class="card-img">
-            <img
-              src="kisspng-computer-icons-user-clip-art-user-5abf13db5624e4.1771742215224718993529.png"
-              alt="Usuario"
-              id="usuario-logo"
-              class="card-img-top"
-            />
+        <div class="tarjeta shadow-longer box">
+          <div class="tarjeta-img">
+            <img src="usuario.png" alt="Usuario" id="usuario-logo" />
           </div>
-          <div class="card-body">
-            <h4 class="card-title">Nombre</h4>
-            <p class="card-text">
+          <div class="tarjeta-body">
+            <h4 class="tarjeta-title">Nombre</h4>
+            <p class="tarjeta-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
               ducimus?
             </p>
@@ -35,10 +31,26 @@
         </div>
 
         <ul>
-          <li><a href="">Biografia</a></li>
-          <li><a href="">Trabajos</a></li>
-          <li><a href="">Posteos</a></li>
-          <li><a href="">Contacto</a></li>
+          <li>
+            <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+            <span class="nav-item"><a href="">Biografia</a></span>
+          </li>
+          <li>
+            <span class="icon"
+              ><ion-icon name="briefcase-outline"></ion-icon
+            ></span>
+            <span class="nav-item"><a href="">Trabajos</a></span>
+          </li>
+          <li>
+            <span class="icon"
+              ><ion-icon name="albums-outline"></ion-icon
+            ></span>
+            <span class="nav-item"><a href="">Posteos</a></span>
+          </li>
+          <li>
+            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+            <span class="nav-item"><a href="">Contacto</a></span>
+          </li>
         </ul>
 
         <p id="cr">© 2022- Nicolas Valderrama</p>
@@ -54,7 +66,7 @@
         </header>
         <div class="prueba">
           <main>
-            <div id="ultimo-posteo">
+            <div id="ultimo-posteo" class="shadow-sharp">
               <h1>Ultimo posteo</h1>
               <h4>Autor</h4>
               <p>
@@ -63,10 +75,26 @@
                 dolorum atque et iure ipsa accusamus maxime ut sint laborum illo
                 dolorem!
               </p>
+
+              <span class="hide" id="hideText"
+                ><p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, voluptatem accusantium consectetur saepe quod
+                  corporis doloremque voluptas voluptatum provident, eos atque
+                  rerum rem velit qui. Doloribus praesentium eius repudiandae
+                  accusamus voluptates vero illo sunt blanditiis minima,
+                  molestias quam dolores impedit modi ut nam ipsum aliquam
+                  suscipit quos voluptate? Aut, exercitationem.
+                </p></span
+              >
+
+              <button class="readMore_btn" id="readMore_btn">
+                Leer más...
+              </button>
             </div>
-            <hr />
+
             <div class="container">
-              <div>
+              <div class="shadow-sharp box">
                 <h1>Post</h1>
                 <h4>Autor</h4>
                 <p>
@@ -75,9 +103,12 @@
                   dolorum atque et iure ipsa accusamus maxime ut sint laborum
                   illo dolorem!
                 </p>
+                <button class="readMore_btn" id="readMore_btn">
+                  Leer más...
+                </button>
               </div>
 
-              <div>
+              <div class="shadow-sharp box">
                 <h1>Post</h1>
                 <h4>Autor</h4>
                 <p>
@@ -86,9 +117,12 @@
                   dolorum atque et iure ipsa accusamus maxime ut sint laborum
                   illo dolorem!
                 </p>
+                <button class="readMore_btn" id="readMore_btn">
+                  Leer más...
+                </button>
               </div>
 
-              <div>
+              <div class="shadow-sharp box">
                 <h1>Post</h1>
                 <h4>Autor</h4>
                 <p>
@@ -97,9 +131,12 @@
                   dolorum atque et iure ipsa accusamus maxime ut sint laborum
                   illo dolorem!
                 </p>
+                <button class="readMore_btn" id="readMore_btn">
+                  Leer más...
+                </button>
               </div>
 
-              <div>
+              <div class="shadow-sharp box">
                 <h1>Post</h1>
                 <h4>Autor</h4>
                 <p>
@@ -108,6 +145,9 @@
                   dolorum atque et iure ipsa accusamus maxime ut sint laborum
                   illo dolorem!
                 </p>
+                <button class="readMore_btn" id="readMore_btn">
+                  Leer más...
+                </button>
               </div>
             </div>
           </main>
@@ -152,5 +192,14 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

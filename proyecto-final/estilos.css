@@ -15,14 +15,14 @@
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-.prueba {
+.main-container {
   display: flex;
 }
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.ejemplo {
+.contenido {
   display: flex;
   flex-direction: column;
 }
@@ -75,6 +75,8 @@ nav {
   border: 2px solid var(--blanco);
   border-radius: 10px;
   margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .tarjeta-title {
   text-align: center;
@@ -188,11 +190,11 @@ section ul {
 }
 section ul li a {
   text-decoration: none;
-  color: #222;
+  color: var(--azul);
 }
 #sub-btn {
   position: relative;
-  left: 50%;
+  left: 55%;
   margin-top: 5px;
 }
 .form-label {

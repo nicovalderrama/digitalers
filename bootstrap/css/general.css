@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 * {
   font-family: "Titillium Web", sans-serif;
 }
@@ -10,66 +11,21 @@
   --negro1: #222;
   --negro2: #999;
 }
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  color: var(--azul);
+}
 .container-fluid {
-  display: flex;
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-.main-container {
-  display: flex;
-}
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.contenido {
-  display: flex;
-  flex-direction: column;
-}
-header {
-  flex-direction: row;
-  width: 100%;
-  height: 50px;
-  /*border: 2px solid black;*/
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--azul);
-}
-header > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: center;
-}
-header > ul > li {
-  list-style: none;
-  margin-right: 20px;
-}
-.publicidad {
-  width: 100%;
-  border-radius: 5px;
-}
-main {
-  width: 80%;
-  /*border: 2px solid black;*/
-  padding: 20px;
-}
-section {
-  width: 20%;
-  /*border: 2px solid black;*/
-  padding: 10px;
-  margin-top: 100px;
-}
-nav {
-  width: 40%;
-  /*border: 2px solid black;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: var(--azul);
-}
+/*------- NAV -----------*/
 .tarjeta {
   margin-top: 50px;
   padding: 20px;
+  width: 80%;
+  border-radius: 10px;
 }
 .tarjeta-img {
   border: 2px solid var(--blanco);
@@ -86,45 +42,6 @@ nav {
 .tarjeta-text {
   color: var(--blanco);
 }
-nav > ul {
-  list-style: none;
-  width: 100%;
-  padding: 0px;
-}
-nav ul li {
-  height: 50px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-nav ul li:hover {
-  background: var(--blanco);
-}
-.nav-item {
-  position: relative;
-  left: 15%;
-}
-nav ul li a {
-  width: 100%;
-  text-decoration: none;
-  color: var(--blanco);
-}
-nav ul li:hover ion-icon {
-  color: var(--azul);
-}
-nav ul li:hover a {
-  color: var(--azul);
-}
-ion-icon {
-  color: var(--blanco);
-  font-size: 1.75em;
-  position: relative;
-  left: 5%;
-}
-nav ul li .icon {
-  line-height: 50px;
-  position: relative;
-  top: 8px;
-}
 #usuario-logo {
   width: 50%;
   height: 50%;
@@ -133,11 +50,78 @@ nav ul li .icon {
   top: 25%;
   object-fit: contain;
 }
-#cr {
+.nav > ul {
+  margin-top: 50px;
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+}
+.nav ul li {
+  height: 50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.nav ul li:hover {
+  background: var(--blanco);
+}
+.nav-item {
+  position: relative;
+  left: 15%;
+}
+.nav ul li a {
+  width: 100%;
+  text-decoration: none;
   color: var(--blanco);
 }
-.card-text {
-  color: black;
+.nav ul li:hover ion-icon {
+  color: var(--azul);
+}
+.nav ul li:hover a {
+  color: var(--azul);
+}
+ion-icon {
+  color: var(--blanco);
+  font-size: 1.75em;
+  position: relative;
+  left: 5%;
+}
+.nav ul li .icon {
+  line-height: 50px;
+  position: relative;
+  top: 8px;
+}
+#cr {
+  color: var(--blanco);
+  margin-top: auto;
+}
+
+/*------------- HEADER --------------*/
+.header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--azul);
+}
+.header > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+.header > ul > li {
+  list-style: none;
+  margin-right: 20px;
+}
+.header > h1 {
+  margin: auto;
+  cursor: pointer;
+}
+/*------------- MAIN --------------*/
+.main {
+  height: 80%;
+  overflow-y: scroll;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .readMore_btn {
   background-color: var(--azul);
@@ -158,15 +142,8 @@ nav ul li .icon {
   color: #fff;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
 }
-
-h1 {
-  font-family: "Bebas Neue", cursive;
-}
-section h1,
-main h1 {
-  color: var(--azul);
-}
 #ultimo-posteo {
+  width: 95%;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -178,4 +155,40 @@ main h1 {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+#banner {
+  width: 700px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+/*------------- ASIDE --------------*/
+.aside ul {
+  list-style-type: circle;
+}
+.aside ul li a {
+  text-decoration: none;
+  color: var(--azul);
+}
+#sub-btn {
+  position: relative;
+  left: 50%;
+  margin-top: 5px;
+}
+.form-label {
+  color: var(--azul);
+  font-weight: 700;
+}
+.publicidad {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*------------- SCROLL --------------*/
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(27, 79, 232, 0.5);
+  border-radius: 10px;
 }

@@ -1,3 +1,6 @@
+.main-reg {
+  color: rgba(23, 101, 255, 0.3);
+}
 .form-control {
   height: 40px;
   box-shadow: none;

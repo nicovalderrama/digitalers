@@ -1,224 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/shadow.css" />
-    <title>Proyecto</title>
-  </head>
 
-  <body>
-    <div class="container-fluid d-flex">
-      <div class="nav col-2 bg-primary flex-column align-items-center">
-        <div class="tarjeta shadow-longer box">
-          <div class="tarjeta-img">
-            <a href="#"
-              ><img
-                src="img/logo-nico-modified.png"
-                alt="Usuario"
-                id="usuario-logo"
-            /></a>
-          </div>
-          <div class="tarjeta-body">
-            <h4 class="tarjeta-title">Nicolás</h4>
-            <p class="tarjeta-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-              ducimus?
-            </p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/shadow.css" />
+  <title>Proyecto</title>
+</head>
+
+<body>
+  <div class="container-fluid d-flex">
+    <div class="nav col-2 bg-primary flex-column align-items-center sticky-bottom fixed-top">
+      <div class="tarjeta shadow-longer box">
+        <div class="tarjeta-img">
+          <a href="#"><img src="img/logo-nico-modified.png" alt="Usuario" id="usuario-logo" /></a>
         </div>
-
-        <ul>
-          <li>
-            <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
-            <span class="nav-item"><a href="">Biografia</a></span>
-          </li>
-          <li>
-            <span class="icon"
-              ><ion-icon name="briefcase-outline"></ion-icon
-            ></span>
-            <span class="nav-item"><a href="">Trabajos</a></span>
-          </li>
-          <li>
-            <span class="icon"
-              ><ion-icon name="albums-outline"></ion-icon
-            ></span>
-            <span class="nav-item"><a href="">Posteos</a></span>
-          </li>
-          <li>
-            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-            <span class="nav-item"><a href="">Contacto</a></span>
-          </li>
-        </ul>
-
-        <p id="cr">© 2022- Nicolas Valderrama</p>
+        <div class="tarjeta-body">
+          <h4 class="tarjeta-title">Nicolás</h4>
+          <p class="tarjeta-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+            ducimus?
+          </p>
+        </div>
       </div>
 
-      <div class="d-flex flex-column col-10">
-        <div class="header col-12 bg-white flex-row mb-0 sticky-top d-flex">
-          <h1>Titulo</h1>
-          <ul class="d-flex">
-            <li><a href="sign-up.html">Registrarse</a></li>
-            <li>
-              <a href="#" class="btn btn-outline-primary mt-1">Ingresar</a>
-            </li>
-          </ul>
-        </div>
+      <ul>
+        <li>
+          <span class="icon">
+            <ion-icon name="book-outline"></ion-icon>
+          </span>
+          <span class="nav-item"><a href="">Biografia</a></span>
+        </li>
+        <li>
+          <span class="icon">
+            <ion-icon name="briefcase-outline"></ion-icon>
+          </span>
+          <span class="nav-item"><a href="">Trabajos</a></span>
+        </li>
+        <li>
+          <span class="icon">
+            <ion-icon name="albums-outline"></ion-icon>
+          </span>
+          <span class="nav-item"><a href="">Posteos</a></span>
+        </li>
+        <li>
+          <span class="icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </span>
+          <span class="nav-item"><a href="">Contacto</a></span>
+        </li>
+      </ul>
 
-        <div class="d-flex col-12">
-          <div
-            class="main col-9 bg-white p-2 d-flex flex-column align-items-center"
-          >
-            <div class="banner">
-              <img
-                src="img/CommunityOfDevelopers.png"
-                alt="developer"
-                id="banner"
-              />
-            </div>
+      <p id="cr">© 2022- Nicolas Valderrama</p>
+    </div>
 
-            <div id="ultimo-posteo" class="shadow-sharp">
-              <h1>Ultimo posteo</h1>
+    <div class="d-flex flex-column col-10">
+      <div class="header col-12 bg-white flex-row mb-0 sticky-top d-flex">
+        <h1>Titulo</h1>
+        <ul class="d-flex">
+          <li><a href="sign-up.html">Registrarse</a></li>
+          <li>
+            <a href="#" class="btn btn-outline-primary mt-1">Ingresar</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex col-12">
+        <div class="main col-9 bg-white p-2 d-flex flex-column align-items-center">
+          <div class="banner">
+            <img src="img/CommunityOfDevelopers.png" alt="developer" id="banner" />
+          </div>
+
+          <div id="ultimo-posteo" class="shadow-sharp">
+            <h1>Ultimo posteo</h1>
+            <h4>Autor</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
+              dolorum atque et iure ipsa accusamus maxime ut sint laborum illo
+              dolorem!
+            </p>
+            <button class="readMore_btn" id="readMore_btn">
+              Leer más...
+            </button>
+          </div>
+
+          <div class="container">
+            <div class="shadow-sharp box">
+              <h1>Post</h1>
               <h4>Autor</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
-                dolorum atque et iure ipsa accusamus maxime ut sint laborum illo
-                dolorem!
+                dolorum atque et iure ipsa accusamus maxime ut sint laborum
+                illo dolorem!
               </p>
               <button class="readMore_btn" id="readMore_btn">
                 Leer más...
               </button>
             </div>
 
-            <div class="container">
-              <div class="shadow-sharp box">
-                <h1>Post</h1>
-                <h4>Autor</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
-                  dolorum atque et iure ipsa accusamus maxime ut sint laborum
-                  illo dolorem!
-                </p>
-                <button class="readMore_btn" id="readMore_btn">
-                  Leer más...
-                </button>
-              </div>
+            <div class="shadow-sharp box">
+              <h1>Post</h1>
+              <h4>Autor</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
+                dolorum atque et iure ipsa accusamus maxime ut sint laborum
+                illo dolorem!
+              </p>
+              <button class="readMore_btn" id="readMore_btn">
+                Leer más...
+              </button>
+            </div>
 
-              <div class="shadow-sharp box">
-                <h1>Post</h1>
-                <h4>Autor</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
-                  dolorum atque et iure ipsa accusamus maxime ut sint laborum
-                  illo dolorem!
-                </p>
-                <button class="readMore_btn" id="readMore_btn">
-                  Leer más...
-                </button>
-              </div>
+            <div class="shadow-sharp box">
+              <h1>Post</h1>
+              <h4>Autor</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
+                dolorum atque et iure ipsa accusamus maxime ut sint laborum
+                illo dolorem!
+              </p>
+              <button class="readMore_btn" id="readMore_btn">
+                Leer más...
+              </button>
+            </div>
 
-              <div class="shadow-sharp box">
-                <h1>Post</h1>
-                <h4>Autor</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
-                  dolorum atque et iure ipsa accusamus maxime ut sint laborum
-                  illo dolorem!
-                </p>
-                <button class="readMore_btn" id="readMore_btn">
-                  Leer más...
-                </button>
-              </div>
-
-              <div class="shadow-sharp box">
-                <h1>Post</h1>
-                <h4>Autor</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
-                  dolorum atque et iure ipsa accusamus maxime ut sint laborum
-                  illo dolorem!
-                </p>
-                <button class="readMore_btn" id="readMore_btn">
-                  Leer más...
-                </button>
-              </div>
+            <div class="shadow-sharp box">
+              <h1>Post</h1>
+              <h4>Autor</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                magni fugiat veritatis veniam sunt fugit. Laboriosam, error ea
+                dolorum atque et iure ipsa accusamus maxime ut sint laborum
+                illo dolorem!
+              </p>
+              <button class="readMore_btn" id="readMore_btn">
+                Leer más...
+              </button>
             </div>
           </div>
+          <div class="mt-2">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
 
-          <div class="aside col-3 bg-white mt-3 p-1">
-            <div class="categorias">
-              <h1>Categorias</h1>
-              <ul>
-                <li>
-                  <a href="#"><p>Reflexiones</p></a>
-                </li>
-                <li>
-                  <a href="#"><p>Experiencias</p></a>
-                </li>
-                <li>
-                  <a href="#"><p>HTML</p></a>
-                </li>
-                <li>
-                  <a href="#"><p>CSS</p></a>
-                </li>
-              </ul>
-            </div>
-            <hr />
-            <div>
-              <form>
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Suscribirse a noticias</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="nombre@ejemplo.com"
-                />
-                <input
-                  type="submit"
-                  value="Suscribirse"
-                  class="btn btn-outline-primary"
-                  id="sub-btn"
-                />
-              </form>
-            </div>
-            <hr />
-            <div>
-              <a
-                href="https://www.educacionit.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  src="img/educ-IT.png"
-                  alt="EducacionIT"
-                  class="publicidad"
-              /></a>
-            </div>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+
+              <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="aside col-3 bg-white mt-3 p-1">
+          <div class="categorias">
+            <h1>Categorias</h1>
+            <ul>
+              <li>
+                <a href="#">
+                  <p>Reflexiones</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>Experiencias</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>HTML</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>CSS</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <form>
+              <label for="exampleFormControlInput1" class="form-label">Suscribirse a noticias</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" />
+              <input type="submit" value="Suscribirse" class="btn btn-outline-primary" id="sub-btn" />
+            </form>
+          </div>
+          <hr />
+          <div>
+            <a href="https://www.educacionit.com/" target="_blank" rel="noopener noreferrer"><img src="img/educ-IT.png"
+                alt="EducacionIT" class="publicidad" /></a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

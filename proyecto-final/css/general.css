@@ -23,7 +23,7 @@ h1 {
 
 /*------- NAV -----------*/
 .nav {
-  height: 610px;
+  height: 790px;
 }
 .tarjeta {
   margin-top: 50px;
@@ -96,12 +96,11 @@ ion-icon {
 }
 #cr {
   color: var(--blanco);
-  /* margin-top: auto;*/
+  margin-top: auto;
 }
 
 /*------------- HEADER --------------*/
 .header {
-  margin-bottom: 20px;
   border-bottom: 1px solid var(--azul);
 }
 .header > ul {
@@ -109,6 +108,7 @@ ion-icon {
   flex-direction: row;
   justify-content: end;
   align-items: center;
+  margin-bottom: 5px;
 }
 .header > ul > li {
   list-style: none;

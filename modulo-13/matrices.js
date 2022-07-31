@@ -1,4 +1,4 @@
-var personas = [
+let personas = [
   ["nicolas", "valderrama", 20],
   ["luciana", "maldonado", 40],
 ];
@@ -9,9 +9,9 @@ for (let i = 0; i < personas.length; i++) {
   );
 }
 
-var texto = "hola como estas";
-var letras = texto.split("");
-var resultado = "";
+let texto = "hola como estas";
+let letras = texto.split("");
+let resultado = "";
 for (let i = 0; i < letras.length; i++) {
   if (letras[i] == "e") {
     break;
@@ -21,7 +21,7 @@ for (let i = 0; i < letras.length; i++) {
 }
 console.log(resultado);
 
-var array = ["pera", "manzana", "durazno", "sandia"];
+let array = ["pera", "manzana", "durazno", "sandia"];
 array.push("naranja");
 array.unshift("uva");
 array.push(prompt("ingrese una fruta para agregar a la lista"));

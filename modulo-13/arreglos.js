@@ -1,5 +1,5 @@
 //arreglos
-var arreglo = [1, 2, 3, 4, 5];
+let arreglo = [1, 2, 3, 4, 5];
 document.getElementById("caja").innerHTML = arreglo;
 
 nuevoarreglo = arreglo.map((element) => element * 2); //Permite recorrer el array y modificar los elementos presentes en él, retornando un nuevo array con la misma longitud que el original.

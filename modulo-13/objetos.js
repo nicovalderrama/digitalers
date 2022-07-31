@@ -1,4 +1,4 @@
-var alumno = {
+let alumno = {
   nombre: "Nicolas",
   apellido: "Valderrama",
   edad: 20,

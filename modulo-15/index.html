@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <div>
+
+        <label>Costos fijos
+            <input type="number" name="costoFijo" id="costoFijo">
+        </label><br>
+        <label>Costos Variables
+            <input type="number" name="costoVariable" id="costoVariable">
+        </label><br>
+        <label>Precio
+            <input type="number" name="precio" id="precio">
+        </label><br>
+        <button id="calcular">Calcular punto de equilibrio</button>
+
+        <p>El resultado es: <span id="caja"></span></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+        $(document).ready(function () {
+                $("calcular").click(function () {
+                    const PrecioVenta = Number($("#precio").val());
+
+                    const CostosFijos = Number($("#costoFijo").val());
+
+                    const CostosVariables = Number($("#costoVariable").val());
+
+                    const PuntoEquilibrio = CostosFijos / (PrecioVenta - CostosVariables);
+
+                    $("caja").html(PuntoEquilibrio);
+                });
+            });
+    </script>
+    
+</body>
+
+</html>

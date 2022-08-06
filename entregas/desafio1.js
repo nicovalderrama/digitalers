@@ -1,4 +1,8 @@
 /*
+Desafio de funciones Callback
+Alumno: Nicolás Valderrama
+Código: 802924
+
 cree una funcion llamada gastoConIva() que acepte un numero y devuelva ese numero más el 21% que es el valor del IVA.
 Luego crea una funcion map() que tome dos parametros:
 un array de valores como enteros.

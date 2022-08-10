@@ -18,7 +18,7 @@ console.log(gastoConIva(700))
 function map(array, callback) {
     let nuevoArray= [];
     array.forEach(e => {
-        nuevoArray.push(callback(e))
+        nuevoArray.push(callback(e)) 
     });
     return nuevoArray;
 }
@@ -29,4 +29,4 @@ console.log(resultado);
 
 //otra forma
 let arrayExtra = array.map(e=>e*1.21);
-console.log(arrayExtra)
+console.log(arrayExtra);

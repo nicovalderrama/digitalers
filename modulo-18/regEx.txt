@@ -1,3 +1,5 @@
+
+
 Coincidencias Basicas
 .       - Cualquier Caracter, excepto nueva linea
 \d      - Cualquier Digitos (0-9)
@@ -6,6 +8,7 @@ Coincidencias Basicas
 \W      - No es un Caracter de Palabra.
 \s      - Espacios de cualquier tipo. (espacio, tab, nueva linea)
 \S      - No es un Espacio, Tab o nueva linea.
+\t      - Coincide con una tabulacion
 
 Limites
 \b      - Limite de Palabra
@@ -31,6 +34,20 @@ Grupos
 Banderas
 g       - busca en todo el documento la palabra o expresion que se quiere buscar
 i       - (caseInsensitive) no importa si es mayuscula o minuscula
+
+
+Las expresiones regulares y los strings nos proporcionan métodos para confirmar que un string
+determinado cumple o no las condiciones configuradas en nuestra expresión regular :
+
+RegExp.test(String): Nos permite evaluar si un string cumple o no
+con nuestra condición. Nos devuelve true o false
+
+String.match(RegExp): Nos permite evaluar cuántas coincidencias tuve de la expresión regular dentro
+del string. Nos devuelve un Array con las coincidencias.
+
+String.replate({RegExp|String},{String|Function}): Nos permite reemplazar partes de un string
+usando una expresión regular para ejecutar la búsqueda y una función para evaluar cada
+reemplazo
 
 
 

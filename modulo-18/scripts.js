@@ -9,6 +9,14 @@ form.addEventListener('submit',(e)=>{
     console.log(long);
     console.log(valorSinEspacios.includes(' '));
     console.log(encodeURIComponent(valorSinEspacios)); // codifica el valor para que no contenga caracteres especiales y los transforma en otros que si podemos controlar
+    
+    //expresion regular para un nombre valido
+    let expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/;
+    if(expresion.test(valorSinEspacios) && long>=3){
+        console.log('Nombre valido');
+    }else{
+        console.log('Nombre invalido');
+    }
 });
 
 

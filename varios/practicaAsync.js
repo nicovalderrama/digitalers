@@ -1,9 +1,16 @@
 async function mostrarFoto(){
-    let response = await fetch('https://api.github.com/users');
-    let datos = await response.json();
-    console.log(datos);
+    //leer nuestro archivo local .json
+    let response = await fetch('usuario.json');
+    let usuario = await response.json();
+
+    //leer usuario github
+    let githubResponse = await fetch(`https://api.github.com/users/${usuario.name}`)
+    let githubUsuario = await githubResponse.json();
+
+    //mostrar avatar en el DOM
     let foto = document.createElement('img');
-    foto.src = datos[2].avatar_url;
+    foto.src = githubUsuario.avatar_url;
     document.body.appendChild(foto);
+    return githubUsuario;
 }
 mostrarFoto();

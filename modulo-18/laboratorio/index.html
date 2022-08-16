@@ -123,10 +123,25 @@
 
         //Continuando con una extension del formulario de la clase pasada, esta vez ademas de animarlo vamos a intentar validarlo
 
-
+        inputs.forEach((input)=>{
+            input.addEventListener('blur',(e)=>{
+                let nombre = e.target.id
+                let valor = e.target.value
+                let valorSinEspacios = valor.trim()
+                let valido = true
+                if(nombre == 'nombre'){
+                    if(valorSinEspacios.length < 3){
+                        valido = false
+                    }
+                }
+                
+            })
+        })
         //1)Asignarle un evento de blur a cada input del formulario de manera tal que se cumplan las siguientes validaciones sin usar expresiones regulares :
-        
+
+
             //1.1)nombre : El nombre debe ser de una o dos palabras como máximo, si se ingresaran más solo se agarrarán las dos primeras. Cada palabra debe ser de por lo menos dos letras como mínimo. Se deben escapar los espacios de adelante y atras de cada palabra.
+
             //1.2)apellido : El apellido debe ser de una o dos palabras como máximo, si se ingresaran más solo se agarrarán las dos primeras. Cada palabra debe ser de por lo menos cuatro letras como mínimo. Se deben escapar los espacios de adelante y atras de cada palabra.
             //1.3)email : El email debe respetar el formato nombre@dominio.com pudiendo contener el nombre caracteres especiales como -_.  
             //1.4)reemail : Su valor debe ser identico al de email

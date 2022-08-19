@@ -15,7 +15,7 @@ estatico.addEventListener('click', function() {
     document.body.appendChild(dinamico);
 });
 
-//accedemos al objeto evento para 
+//accedemos al objeto evento para eliminar el boton dinamicamente
 document.addEventListener('click', function(e) {
     console.log(e.target.id);
     if(e.target.id == 'dinamico'){

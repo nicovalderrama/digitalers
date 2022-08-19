@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(51, 51, 51);
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.container{
+    height: 600px;
+    text-align: center;
+    color: rgb(39, 84, 209);
+    background-color: rgb(151, 141, 141);
+    transform: translateY(22%)
+}
+#logo{
+    width: 30rem;
+
+}
+#dato,#boton{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+#boton{
+    /* margin-bottom: 200px; */
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    border: none;
+}
+input::placeholder{
+    font-size: 15px;
+}
+#imgPoke{
+    width: 200px;
+}
+#pokeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parrafos{
+    display: block;
+}

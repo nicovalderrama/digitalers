@@ -2,51 +2,74 @@
 let arreglo = [1, 2, 3, 4, 5];
 document.getElementById("caja").innerHTML = arreglo;
 
+arreglo.forEach((elemento) => {
+    console.log(elemento*2);
+});
+
 nuevoarreglo = arreglo.map((element) => element * 2); //Permite recorrer el array y modificar los elementos presentes en él, retornando un nuevo array con la misma longitud que el original.
 console.log(nuevoarreglo);
-/*filter() : Recorre el array y retorna un nuevo array con aquellos elementos que pasen una determinada condición.
 
-forEach() : Permite iterar el contenido de un array. Recibe un callback que toma como parámetro el elemento actual de la iteración y el indice del mismo.
+const filter= arreglo.filter((element) => element > 3); //Permite filtrar los elementos de un array, retornando un nuevo array con los elementos que cumplan con la condición.
+console.log(filter);
 
-find() : Recorre el array y retorna la primera coincidencia del elemento que se busca.
+const find = arreglo.find((element) => element > 3); //Permite buscar un elemento en un array, retornando el primer elemento que cumpla con la condición.
+console.log(find);
 
-sort() : Ordena los elementos del array y retorna el arreglo ordenado. Los elementos se ordenarán en orden ascendente (de la A a la Z) por defecto.
+const every = arreglo.every((element) => element > 3); //Permite verificar si todos los elementos de un array cumplen con una condición, retornando un booleano.
 
-some() : Itera el array y retorna un booleano si como mínimo uno de los elementos presentes en el array pasa una condición determinada. Recibe un callback que se encargara de preguntar aquello que queremos dentro del array.
+const some = arreglo.some((element) => element > 3); //Permite verificar si al menos un elemento de un array cumple con una condición, retornando un booleano.
 
-every() : Es similar al some(), ya que itera el array y retorna un booleano. Pero esta vez, para que dicho booleano sea true todos los elementos del array deberán pasar la condición dada.
+const reduce = arreglo.reduce((acumulador, elemento) => acumulador + elemento); //Permite reducir un array a un único valor, retornando dicho valor.
 
-concat() : Se utiliza para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array.
+const reduceRight = arreglo.reduceRight((acumulador, elemento) => acumulador + elemento); //Permite reducir un array a un único valor, retornando dicho valor, pero recorriendo el array de derecha a izquierda.
 
-includes() : Determina si un array incluye un determinado elemento y retorna un booleano según corresponda.
-join() : Une todos los elementos de un array en una cadena. Podemos pasarle como parámetro el carácter de separación que debe agregar entre los elementos.
+const includes = arreglo.includes(3); //Permite verificar si un elemento se encuentra en un array, retornando un booleano.
 
-reduce() : Aplica una función a un acumulador y a cada valor de una array (de izquierda a derecha) para reducirlo a un único valor.
+const indexOf = arreglo.indexOf(3); //Permite buscar un elemento en un array, retornando el índice del primer elemento que cumpla con la condición.
 
-indexOf() : Retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente.
+const lastIndexOf = arreglo.lastIndexOf(3); //Permite buscar un elemento en un array, retornando el índice del último elemento que cumpla con la condición.
 
-findIndex() : Retorna el índice del primer elemento de un array que cumpla con la función de prueba proporcionada. En caso contrario devuelve -1.
+const join = arreglo.join(" - "); //Permite unir todos los elementos de un array en un string, retornando dicho string.
 
-fill() : Cambia todos los elementos de un array por un valor estático, desde el índice de inicio hasta el índice final. Retorna el array modificado.
+const toString = arreglo.toString(); //Permite convertir un array en un string, retornando dicho string.
 
-push() : Añade uno o más elementos al final de un array y devuelve la nueva longitud del array.
+const sort = arreglo.sort(); //Permite ordenar los elementos de un array, retornando el array ordenado.
 
-pop() : Elimina el último elemento de un array y lo devuelve. Este método cambia la longitud del array.
+const reverse = arreglo.reverse(); //Permite invertir el orden de los elementos de un array, retornando el array invertido.
 
-shift() : Elimina el primer elemento del array y lo retorna. Este método modifica la longitud del array.
+const push = arreglo.push(6); //Permite agregar un elemento al final de un array, retornando la nueva longitud del array.
 
-unshift() : Agrega uno o más elementos al inicio del array, y devuelve la nueva longitud del array.
+const pop = arreglo.pop(); //Permite eliminar el último elemento de un array, retornando dicho elemento.
 
-slice() : Devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido). El array original no se modificará.
+const unshift = arreglo.unshift(0); //Permite agregar un elemento al inicio de un array, retornando la nueva longitud del array.
 
-reverse() : Invierte el orden de los elementos de un array. El primer elemento pasa a ser el último y el último pasa a ser el primero.
+const shift = arreglo.shift(); //Permite eliminar el primer elemento de un array, retornando dicho elemento.
 
-splice() : Cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
-lastIndexOf() : Busca un elemento en un array y devuelve su posición. Comienza buscando por el final del array. Retorna -1 si el elemento no se encontrara.
+const splice = arreglo.splice(2, 0, 3.5); //Permite eliminar o reemplazar elementos de un array, retornando un array con los elementos eliminados.
 
-flat() : Crea una nuevo array con todos los elementos de sub-array concatenados recursivamente hasta la profundidad especificada.
+const slice = arreglo.slice(2, 4); //Permite extraer elementos de un array, retornando un nuevo array con los elementos extraídos.
 
-isArray() : Determina si el valor pasado es un Array.
+const concat = arreglo.concat([6, 7, 8]); //Permite unir dos o más arrays, retornando un nuevo array con la unión de los arrays.
 
-from() : Crea una nueva instancia de Array a partir de un objeto iterable.
-*/
+const flat = arreglo.flat(); //Permite aplanar un array, retornando un nuevo array con los elementos aplanados.
+
+const flatMap = arreglo.flatMap((element) => [element * 2]); //Permite recorrer un array y modificar los elementos presentes en él, retornando un nuevo array con la misma longitud que el original, pero aplanado.
+
+const copyWithin = arreglo.copyWithin(0, 3); //Permite copiar elementos de un array a otro, retornando el array modificado.
+
+const fill = arreglo.fill(0); //Permite reemplazar todos los elementos de un array con un elemento, retornando el array modificado.
+
+const entries = arreglo.entries(); //Permite obtener un iterador de un array, retornando dicho iterador.
+
+const keys = arreglo.keys(); //Permite obtener un iterador de las claves de un array, retornando dicho iterador.
+
+const values = arreglo.values(); //Permite obtener un iterador de los valores de un array, retornando dicho iterador.
+
+const from = Array.from("Hola"); //Permite crear un array a partir de un objeto iterable, retornando un nuevo array.
+
+const of = Array.of(1, 2, 3, 4, 5); //Permite crear un array a partir de los argumentos pasados, retornando un nuevo array.
+
+const isArray = Array.isArray(arreglo); //Permite verificar si un objeto es un array, retornando un booleano.
+
+
+

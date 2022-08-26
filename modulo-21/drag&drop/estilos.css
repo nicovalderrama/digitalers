@@ -1,0 +1,16 @@
+#drop{
+    width: 200px;
+    text-align: center;
+    padding:50px;
+    border: 2px dotted gray;
+    color: gray;
+
+}
+#drop:hover{
+    border-color: black;
+    color: black;
+}
+
+input{
+    display: none;
+}

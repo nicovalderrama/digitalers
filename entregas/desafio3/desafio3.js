@@ -27,7 +27,7 @@ async function usuarios() {
             <td>${ciudad}</td>
         </tr>`;
         table.appendChild(tbody);
-
+        
     });
 
     

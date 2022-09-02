@@ -1,0 +1,23 @@
+{
+  "name": "npm-digitalers",
+  "version": "1.0.0",
+  "description": "curso de nodejs llamado digitalers",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "digitalers",
+    "curso",
+    "nodeynpm"
+  ],
+  "author": "Nicolas",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "desafio4",
+  "version": "1.0.0",
+  "description": "desafio de node curso digitalers",
+  "main": "desafio4.js",
+  "scripts": {
+    "dev": "json-server --watch db.json"
+  },
+  "author": "Nicolas",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

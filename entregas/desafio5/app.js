@@ -29,7 +29,7 @@ app.get('/api/getLetra/:num',(req,res)=>{
     res.send(`La letra en el indice ${num} es: ${fraseSinEspacios[num-1]}`)
 })
 
-app.get('/api/getPalabra',(req,res)=>{
+app.get('/api/getPalabra/:num',(req,res)=>{
     const num = parseInt(req.params.num);
     const fraseSeparada= frase.split(" ");
 
@@ -43,7 +43,7 @@ app.get('/api/getPalabra',(req,res)=>{
         res.json({ERROR: 'El parametro tiene que ser un numero'})
     }
 
-    res.send(`La letra en el indice ${num} es: ${fraseSeparada[num-1]}`)
+    res.send(`La palabra en el indice ${num} es: ${fraseSeparada[num-1]}`)
 })
 
 app.listen(port, (error) => {

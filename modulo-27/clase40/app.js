@@ -35,7 +35,16 @@ app.put('/:id',(req,res)=>{
     const {id} = req.params
     const {name,userName}= req.body
     User
-        .updateOne({_id : id})
+        .updateOne({_id : id},{$set:{name,userName}})
+        .then((data)=>res.json(data))
+        .catch((err)=>res.json(err))
+})
+
+//eliminamos usuario por ID
+app.delete('/:id',(req,res)=>{
+    const {id} = req.params
+    User
+        .deleteOne({_id : id})
         .then((data)=>res.json(data))
         .catch((err)=>res.json(err))
 })
